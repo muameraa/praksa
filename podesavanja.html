@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    
+        <title> Super6 </title>
+        <style type="text/css">
+            body
+            {
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif ;
+                background-color:rgb(26, 26, 211);
+              
+            }
+            .super{
+                background-color: rgb(105, 103, 103);
+                border-radius: 40px;
+                border-style: solid;
+                border:40px;
+                border-color: white;
+                height: 60vh;
+                min-width:20vw;
+            }
+            .prikaz{
+                background-color: white;
+                min-width:60vw;
+            }
+
+            .stednja{
+                display: flex;
+                justify-content: center;
+                position: fixed;
+                top: 20%;
+                left: 10%;
+            }
+
+            .super ul li{
+                margin-bottom: 20%;
+            }
+
+            .prikaz section{
+                display: flex;
+            }
+
+            .prikaz section div{
+                margin-right: 10%;
+                border: 4px;
+                border-color: black;
+                border-style: solid;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                min-height: 14vh;
+                min-width:14vw;                                
+            }
+
+            .prikaz section div *{
+                margin-left: 1vh;
+                margin-right: 1vh;
+            }
+
+            .prikaz h1{
+
+                margin-left:4%;
+            }
+
+            ul{
+                list-style-type:none;
+            }
+            .prvi{
+                margin-left: 4%;
+            }
+        </style>
+    
+    
+</head>
+<body>
+
+<section class="stednja">
+<div class="super"> <!--Super 6-->
+   <ul>
+    <li><a href="kontrolna_tabla.html">Kontrolna tabla</a></li>
+    <li><a href="ciljevi.html">Ciljevi</a></li>
+    <li><a href="transakcije.html">Transakcije</a></li>
+    <li><a href="podesavanja.html">Podešavanja</a></li>
+   </ul>
+</div> <!--Super 6-->
+<div class="prikaz"> <!--Tabla-->
+    <h1> Podešavanja </h1>
+    <hr>
+    <section> <!--Početak prve grupe po tri div-a -->
+Prvi section 
+
+    </section> <!--Kraj prve grupe po tri div-a -->
+ <br>
+    <section> <!--Početak druge grupe po tri div-a -->
+  Drugi section
+    </section> <!--Kraj druge grupe po tri div-a -->
+
+
+</div> <!--Tabla-->
+</section> <!--Kraj prvog section-a -->
+
+
+</body>
+</html>
