@@ -1,104 +1,36 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="bs">
 <head>
     <meta charset="UTF-8">
-    
-        <title> Super6 </title>
-        <style type="text/css">
-            body
-            {
-                margin:0;
-                font-family:Arial, Helvetica, sans-serif ;
-                background-color:rgb(26, 26, 211);
-              
-            }
-            .super{
-                background-color: rgb(105, 103, 103);
-                border-radius: 40px;
-                border-style: solid;
-                border:40px;
-                border-color: white;
-                height: 60vh;
-                min-width:20vw;
-            }
-            .prikaz{
-                background-color: white;
-                min-width:60vw;
-            }
-
-            .stednja{
-                display: flex;
-                justify-content: center;
-                position: fixed;
-                top: 20%;
-                left: 10%;
-            }
-
-            .super ul li{
-                margin-bottom: 20%;
-            }
-
-            .prikaz section{
-                display: flex;
-            }
-
-            .prikaz section div{
-                margin-right: 10%;
-                border: 4px;
-                border-color: black;
-                border-style: solid;
-                border-bottom-right-radius: 20px;
-                border-bottom-left-radius: 20px;
-                min-height: 14vh;
-                min-width:14vw;                                
-            }
-
-            .prikaz section div *{
-                margin-left: 1vh;
-                margin-right: 1vh;
-            }
-
-            .prikaz h1{
-
-                margin-left:4%;
-            }
-
-            ul{
-                list-style-type:none;
-            }
-            .prvi{
-                margin-left: 4%;
-            }
-        </style>
-    
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super6 - Finansije</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-<section class="stednja">
-<div class="super"> <!--Super 6-->
-   <ul>
-    <li><a href="kontrolna_tabla.html">Kontrolna tabla</a></li>
-    <li><a href="ciljevi.html">Ciljevi</a></li>
-    <li><a href="transakcije.html">Transakcije</a></li>
-    <li><a href="podesavanja.html">Podešavanja</a></li>
-   </ul>
-</div> <!--Super 6-->
-<div class="prikaz"> <!--Tabla-->
-    <h1> Ciljevi </h1>
-    <hr>
-    <section> <!--Početak prve grupe po tri div-a -->   
-
-    </section> <!--Kraj prve grupe po tri div-a -->
- <br>
-    <section> <!--Početak druge grupe po tri div-a -->
-  
-    </section> <!--Kraj druge grupe po tri div-a -->
-
-
-</div> <!--Tabla-->
-</section> <!--Kraj prvog section-a -->
-
-
+    <div class="container">
+        <!-- Sidebar identičan Dashboardu -->
+        <aside class="sidebar">
+            <h2>Super6</h2>
+            <ul>
+                <li><a href="dashboard_drugi.html"><i class="fa-solid fa-house"></i> Kontrolna tabla</a></li>
+                <li><a href="ciljevi.html"><i class="fa-solid fa-bullseye"></i> Ciljevi</a></li>
+                <li class="active"><a href="finansije.html"><i class="fa-solid fa-arrow-right-arrow-left"></i> Finansije</a></li>
+                <li><a href="podesavanja.html"><i class="fa-solid fa-gear"></i> Podešavanja</a></li>
+            </ul>
+        </aside>
+ 
+        <!-- Glavni sadržaj -->
+        <main class="dashboard_drugi">
+            <header>
+                <h1>Ciljevi</h1>
+                <i class="fa-regular fa-user user-icon" style="margin-left: 60vw;"></i>
+            </header>
+            <hr>
+ 
+        </main>
+    </div>
+ 
 </body>
 </html>
