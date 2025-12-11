@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css"> 
+</head>
+<body>
+
+    <span style="font-size:40px;cursor:pointer" onclick="otvori()">&#9776; Calculator </span>
+
+    <div class="calculator" id="sidebar">
+        <a href="javascript:void(0)" class="zatvoriti" onclick="zatvori()">Zatvori</a>
+        <fieldset>
+            <legend>Calculator</legend>
+            <form name="digit" method="" action="">
+                <input id="calc" type="text" name="unos"><br><br>
+
+                <input type="button" value="1" onclick="digit.unos.value +='1' "> 
+                <input type="button" value="2" onclick="digit.unos.value +='2' "> 
+                <input type="button" value="3" onclick="digit.unos.value +='3' "> 
+                <input type="button" value="+" onclick="digit.unos.value +='+' "> 
+
+                <input type="button" value="4" onclick="digit.unos.value +='4' "> 
+                <input type="button" value="5" onclick="digit.unos.value +='5' "> 
+                <input type="button" value="6" onclick="digit.unos.value +='6' "> 
+                <input type="button" value="+" onclick="digit.unos.value +='+' "> 
+
+                <input type="button" value="7" onclick="digit.unos.value +='7' "> 
+                <input type="button" value="8" onclick="digit.unos.value +='8' "> 
+                <input type="button" value="9" onclick="digit.unos.value +='9' "> 
+                <input type="button" value="*" onclick="digit.unos.value +='*' "> 
+
+                <input type="button" value="/" onclick="digit.unos.value +='/' "> 
+                <input type="button" value="0" onclick="digit.unos.value +='0' "> 
+                <input type="button" value="-" onclick="digit.unos.value +='-' "> 
+
+                <input type="button" value="=" onclick="digit.unos.value=eval(digit.unos.value)">
+                <br>
+                 <input type="button" value="Reset" onclick="digit.unos.value=' '" id="clear">
+                 <br>
+
+                 <script type="text/javascript">
+                    function otvori()  
+                    {
+                        document.getElementById("sidebar").style.width="350px";
+                    }
+                    function zatvori()
+                    {
+                        document.getElementById("sidebar").style.width="0";
+                    }
+                 </script>
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
